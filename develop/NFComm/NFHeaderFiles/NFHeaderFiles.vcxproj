@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\NFPluginModule\ConnectData.h" />
+    <ClInclude Include="..\NFPluginModule\IAccountRedis.h" />
+    <ClInclude Include="..\NFPluginModule\ICommonRedis.h" />
+    <ClInclude Include="..\NFPluginModule\IGameKernel.h" />
+    <ClInclude Include="..\NFPluginModule\ILetterRedis.h" />
+    <ClInclude Include="..\NFPluginModule\IPlatformKernel.h" />
+    <ClInclude Include="..\NFPluginModule\IRedisDriver.h" />
+    <ClInclude Include="..\NFPluginModule\IRoomKernel.h" />
+    <ClInclude Include="..\NFPluginModule\IWordsFilterModule.h" />
+    <ClInclude Include="..\NFPluginModule\KConstDefine.h" />
+    <ClInclude Include="..\NFPluginModule\MetricsDefine.h" />
+    <ClInclude Include="..\NFPluginModule\NetData.h" />
+    <ClInclude Include="..\NFPluginModule\NFGUID.h" />
+    <ClInclude Include="..\NFPluginModule\NFIClass.h" />
+    <ClInclude Include="..\NFPluginModule\NFIClassModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIComponent.h" />
+    <ClInclude Include="..\NFPluginModule\ICreateRoleModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIElementModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIEventModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIHttpServerModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIKernelModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIKernelPubServer.h" />
+    <ClInclude Include="..\NFPluginModule\NFILetterModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFILogModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIMysqlDriver.h" />
+    <ClInclude Include="..\NFPluginModule\NFIMysqlModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFINoSqlModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIPlugin.h" />
+    <ClInclude Include="..\NFPluginModule\NFIPluginManager.h" />
+    <ClInclude Include="..\NFPluginModule\IPubKernel.h" />
+    <ClInclude Include="..\NFPluginModule\NFIResModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFIHeartBeatModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFISecurityModule.h" />
+    <ClInclude Include="..\NFPluginModule\NFPlatform.h" />
+    <ClInclude Include="..\NFPluginModule\NotifyData.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{164E42F1-D331-4B83-8207-CB24EFFBC1C6}</ProjectGuid>
+    <RootNamespace>NFHeaderFiles</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>NFHeaderFiles</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <OutDir>$(SolutionDir)_Out\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

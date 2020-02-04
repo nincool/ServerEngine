@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DBServer.cpp" />
+    <ClCompile Include="DBServerState.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="AccountRedis.cpp" />
+    <ClCompile Include="LogToDB.cpp" />
+    <ClCompile Include="ObjectRedis.cpp" />
+    <ClCompile Include="LetterRedis.cpp" />
+    <ClCompile Include="PlatformRedis.cpp" />
+    <ClCompile Include="PlayerRedis.cpp" />
+    <ClCompile Include="CommonRedis.cpp" />
+    <ClCompile Include="DBServerPlugin.cpp" />
+    <ClCompile Include="PubRedis.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\IniFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\Base64.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\rijndael.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\CryptoServer\CryptoServer.cpp">
+      <Filter>Utils\CryptoServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ColdData.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\StringUtil.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccountRedis.h" />
+    <ClInclude Include="DBServer.h" />
+    <ClInclude Include="DBServerState.h" />
+    <ClInclude Include="LogToDB.h" />
+    <ClInclude Include="ObjectRedis.h" />
+    <ClInclude Include="LetterRedis.h" />
+    <ClInclude Include="PlatformRedis.h" />
+    <ClInclude Include="PlayerRedis.h" />
+    <ClInclude Include="CommonRedis.h" />
+    <ClInclude Include="DBServerPlugin.h" />
+    <ClInclude Include="PubRedis.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\IniFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\LuaExt.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\AutoMem.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\Base64.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\rijndael.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\CryptoServer\CryptoServer.h">
+      <Filter>Utils\CryptoServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ColdData.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\StringUtil.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{ddf589c0-3d07-4fdd-9262-0fdba9400067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\CryptoServer">
+      <UniqueIdentifier>{63489dc1-2171-4fe8-a249-d09d608e3537}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

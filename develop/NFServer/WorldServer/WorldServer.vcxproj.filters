@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="WorldClientLogicModule.cpp" />
+    <ClCompile Include="WorldPlayers.cpp" />
+    <ClCompile Include="WorldPlayerState.cpp" />
+    <ClCompile Include="WorldServerLogicModule.cpp" />
+    <ClCompile Include="WorldServer.cpp" />
+    <ClCompile Include="WorldServerState.cpp" />
+    <ClCompile Include="WorldServerPlugin.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\IniFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteIP.cpp" />
+    <ClCompile Include="MaintainModule.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\StringUtil.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WorldClientLogicModule.h" />
+    <ClInclude Include="WorldPlayers.h" />
+    <ClInclude Include="WorldServerLogicModule.h" />
+    <ClInclude Include="WorldServer.h" />
+    <ClInclude Include="WorldServerState.h" />
+    <ClInclude Include="WorldServerPlugin.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\IniFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\LuaExt.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteIP.h" />
+    <ClInclude Include="MaintainModule.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\StringUtil.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{f9a196cc-e32e-47df-9ce2-aba14e120acd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

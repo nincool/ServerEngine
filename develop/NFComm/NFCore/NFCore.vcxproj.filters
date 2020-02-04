@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Unit">
+      <UniqueIdentifier>{79f51951-d5bb-48f2-b1d4-569c3e7acdb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{736cfe90-f835-4c45-9dd5-90e66df68ed4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NFPublic">
+      <UniqueIdentifier>{a7671828-aa7d-461a-88d1-8385c509a6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NFUtils">
+      <UniqueIdentifier>{a5d5e6f0-7afd-49fe-845b-7e2f582c24d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NFUtils\pb_json">
+      <UniqueIdentifier>{774972a1-c8d9-4e96-99c7-4a26ef6a5e7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NFIObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIRecordManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIPropertyManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIProperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFMapEx.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="NFList.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="NFDateTime.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="NFMemoryCounter.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="NFSingleton.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="NFDataList.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="NFConsistentHash.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="NFPerformance.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="NFObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFPropertyManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFRecordManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFProperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFViewport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFPlayer.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="NFVisible.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFPublic\Debug.h">
+      <Filter>NFPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFPublic\ExceptMsg.h">
+      <Filter>NFPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\NFTool.hpp">
+      <Filter>NFUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="PBConvert.hpp">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\StringUtil.h">
+      <Filter>NFUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\LogShareMem.h">
+      <Filter>NFUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\QLOG.h">
+      <Filter>NFUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\QuickLog.h">
+      <Filter>NFUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\termcolor.hpp">
+      <Filter>NFUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="RawProperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFContainer.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\pb_json\json.hpp">
+      <Filter>NFUtils\pb_json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\pb_json\pb2json.hpp">
+      <Filter>NFUtils\pb_json</Filter>
+    </ClInclude>
+    <ClInclude Include="intrusiveList.h">
+      <Filter>Unit</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NFObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFProperty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFPropertyManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFRecordManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFViewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFPlayer.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="NFObjectContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFVisible.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NFUtils\StringUtil.cpp">
+      <Filter>NFUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NFUtils\QuickLog.cpp">
+      <Filter>NFUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="NFContainer.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

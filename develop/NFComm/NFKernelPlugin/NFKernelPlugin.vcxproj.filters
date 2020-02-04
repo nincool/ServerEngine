@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="NFKernelPlugin.h" />
+    <ClInclude Include="NFEventModule.h" />
+    <ClInclude Include="NFKernelModule.h" />
+    <ClInclude Include="NFHeartBeatModule.h" />
+    <ClInclude Include="..\NFPublic\Debug.h">
+      <Filter>NFPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\NFTool.hpp">
+      <Filter>NFUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFPublic\ExceptMsg.h">
+      <Filter>NFPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\IniFile.h">
+      <Filter>NFUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraServerModule.h" />
+    <ClInclude Include="PerformanceCountModule.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NFKernelPlugin.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="NFEventModule.cpp" />
+    <ClCompile Include="NFKernelModule.cpp" />
+    <ClCompile Include="NFKernelContainer.cpp" />
+    <ClCompile Include="NFHeartBeatModule.cpp" />
+    <ClCompile Include="..\NFUtils\IniFile.cpp">
+      <Filter>NFUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtraServerModule.cpp" />
+    <ClCompile Include="PerformanceCountModule.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="NFPublic">
+      <UniqueIdentifier>{ed2f4a2b-218f-4881-ac82-25f3c898dfbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NFUtils">
+      <UniqueIdentifier>{270ba9be-79d4-401e-b7fd-c351e09be16f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

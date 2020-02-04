@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B9833FE8-8C0B-40D6-BA01-3CDADEB21166}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NFCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\NFCommon.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\NFCommon.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>$(SolutionDir)_Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)_Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_X64;_DEBUG;NF_NONCLIENT_BUILD;PROTOBUF_USE_DLLS;NOMINMAX;QUICK_LOG_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\Dependencies\;$(SolutionDir)\Dependencies\libevent\;$(SolutionDir)\Dependencies\libevent\WIN32-Code\;$(SolutionDir)\Dependencies\libevent\include\;$(SolutionDir)\Dependencies\libevent\compat\;$(SolutionDir)\Dependencies\protobuf\src\;$(SolutionDir)\Dependencies\libevent\WIN32-Code\nmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>false</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)_Out\Lib\$(Configuration)\;$(SolutionDir)_Out\$(Configuration)\;</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_X64;NDEBUG;NF_NONCLIENT_BUILD;PROTOBUF_USE_DLLS;NOMINMAX;QUICK_LOG_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\Dependencies\;$(SolutionDir)\Dependencies\libevent\;$(SolutionDir)\Dependencies\libevent\WIN32-Code\;$(SolutionDir)\Dependencies\libevent\include\;$(SolutionDir)\Dependencies\libevent\compat\;$(SolutionDir)\Dependencies\protobuf\src\;$(SolutionDir)\Dependencies\libevent\WIN32-Code\nmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)_Out\Lib\$(Configuration)\;$(SolutionDir)_Out\$(Configuration)\;</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\NFPublic\Debug.h" />
+    <ClInclude Include="..\NFPublic\ExceptMsg.h" />
+    <ClInclude Include="..\NFUtils\LogShareMem.h" />
+    <ClInclude Include="..\NFUtils\NFTool.hpp" />
+    <ClInclude Include="..\NFUtils\pb_json\json.hpp" />
+    <ClInclude Include="..\NFUtils\pb_json\pb2json.hpp" />
+    <ClInclude Include="..\NFUtils\QLOG.h" />
+    <ClInclude Include="..\NFUtils\QuickLog.h" />
+    <ClInclude Include="..\NFUtils\StringUtil.h" />
+    <ClInclude Include="..\NFUtils\termcolor.hpp" />
+    <ClInclude Include="intrusiveList.h" />
+    <ClInclude Include="NFConsistentHash.hpp" />
+    <ClInclude Include="NFContainer.h" />
+    <ClInclude Include="NFObject.h" />
+    <ClInclude Include="NFPlayer.h" />
+    <ClInclude Include="NFProperty.h" />
+    <ClInclude Include="NFPropertyManager.h" />
+    <ClInclude Include="NFRecordManager.h" />
+    <ClInclude Include="NFDataList.hpp" />
+    <ClInclude Include="NFDateTime.hpp" />
+    <ClInclude Include="NFMapEx.hpp" />
+    <ClInclude Include="NFMemoryCounter.hpp" />
+    <ClInclude Include="NFPerformance.hpp" />
+    <ClInclude Include="NFSingleton.hpp" />
+    <ClInclude Include="NFRecord.h" />
+    <ClInclude Include="NFIObject.h" />
+    <ClInclude Include="NFIProperty.h" />
+    <ClInclude Include="NFIPropertyManager.h" />
+    <ClInclude Include="NFIRecord.h" />
+    <ClInclude Include="NFIRecordManager.h" />
+    <ClInclude Include="NFList.hpp" />
+    <ClInclude Include="NFViewport.h" />
+    <ClInclude Include="NFVisible.h" />
+    <ClInclude Include="PBConvert.hpp" />
+    <ClInclude Include="RawProperty.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\NFUtils\QuickLog.cpp" />
+    <ClCompile Include="..\NFUtils\StringUtil.cpp" />
+    <ClCompile Include="NFContainer.cpp" />
+    <ClCompile Include="NFObjectContainer.cpp" />
+    <ClCompile Include="NFObject.cpp" />
+    <ClCompile Include="NFPlayer.cpp" />
+    <ClCompile Include="NFProperty.cpp" />
+    <ClCompile Include="NFPropertyManager.cpp" />
+    <ClCompile Include="NFRecordManager.cpp" />
+    <ClCompile Include="NFRecord.cpp" />
+    <ClCompile Include="NFViewport.cpp" />
+    <ClCompile Include="NFVisible.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,3 @@
+﻿  Checking Build System
+  The system cannot find the path specified.
+c:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(220,5): error MSB6006: “cmd.exe”已退出，代码为 3。

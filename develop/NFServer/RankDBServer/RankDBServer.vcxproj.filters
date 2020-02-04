@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\NFComm\NFUtils\IniFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\Base64.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\rijndael.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\CryptoServer\CryptoServer.cpp">
+      <Filter>Utils\CryptoServer</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="RankDBServerPlugin.cpp" />
+    <ClCompile Include="RankRedis.cpp" />
+    <ClCompile Include="..\DBSever\ColdData.cpp" />
+    <ClCompile Include="..\DBSever\CommonRedis.cpp" />
+    <ClCompile Include="RankDBServer.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\StringUtil.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\NFComm\NFUtils\IniFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\LuaExt.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\AutoMem.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\Base64.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\rijndael.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\CryptoServer\CryptoServer.h">
+      <Filter>Utils\CryptoServer</Filter>
+    </ClInclude>
+    <ClInclude Include="RankDBServerPlugin.h" />
+    <ClInclude Include="RankRedis.h" />
+    <ClInclude Include="..\DBSever\ColdData.h" />
+    <ClInclude Include="..\DBSever\CommonRedis.h" />
+    <ClInclude Include="RankDBServer.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\StringUtil.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{ddf589c0-3d07-4fdd-9262-0fdba9400067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\CryptoServer">
+      <UniqueIdentifier>{63489dc1-2171-4fe8-a249-d09d608e3537}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

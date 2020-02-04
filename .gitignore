@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+/develop/.vs
+/develop/_Out
+/develop/Temp/Debug_x64
+/develop/Temp/Release_x64
+/develop/NFTools/CommandClient/x64
+/develop/x64

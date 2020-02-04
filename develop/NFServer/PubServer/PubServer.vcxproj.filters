@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="PubKernel.cpp" />
+    <ClCompile Include="PubServer.cpp" />
+    <ClCompile Include="PubServerPlugin.cpp" />
+    <ClCompile Include="PubInfoUpdateModule.cpp" />
+    <ClCompile Include="PubServerState.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\IniFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MaintainModule.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\StringUtil.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PubKernel.h" />
+    <ClInclude Include="PubServer.h" />
+    <ClInclude Include="PubServerPlugin.h" />
+    <ClInclude Include="PubInfoUpdateModule.h" />
+    <ClInclude Include="PubServerState.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\IniFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\LuaExt.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MaintainModule.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\StringUtil.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{4ee21c88-e592-4415-8a70-7d3bbc77778e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

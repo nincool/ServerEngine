@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="NetPlugin.cpp" />
+    <ClCompile Include="NetClient.cpp">
+      <Filter>NetClient</Filter>
+    </ClCompile>
+    <ClCompile Include="NetClientModule.cpp">
+      <Filter>NetClient</Filter>
+    </ClCompile>
+    <ClCompile Include="NetServer.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="NetServerModuleBase.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="NetServerMaintainModule.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="NetServerOuterModule.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="NetServerInsideModule.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="NFHttpServer.cpp">
+      <Filter>HttpServer</Filter>
+    </ClCompile>
+    <ClCompile Include="NFHttpServerModule.cpp">
+      <Filter>HttpServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NFUtils\StringUtil.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalNetServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NetPlugin.h" />
+    <ClInclude Include="NetMsgHead.h" />
+    <ClInclude Include="NetDefine.h" />
+    <ClInclude Include="NetClient.h">
+      <Filter>NetClient</Filter>
+    </ClInclude>
+    <ClInclude Include="NetClientModule.h">
+      <Filter>NetClient</Filter>
+    </ClInclude>
+    <ClInclude Include="NetCallback.h" />
+    <ClInclude Include="NetServer.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetMsgQue.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetObj.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetServerModuleBase.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetServerInsideModule.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetServerMaintainModule.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetServerOuterModule.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NFHttpServer.h">
+      <Filter>HttpServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NFHttpServerModule.h">
+      <Filter>HttpServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIHttpServer.h">
+      <Filter>HttpServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NFUtils\StringUtil.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalNetServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="NetClient">
+      <UniqueIdentifier>{8bbfe3ff-aff0-4333-9133-ed77db6aaeee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetServer">
+      <UniqueIdentifier>{43981e3a-9420-415d-bbe1-16ff95ea0e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HttpClient">
+      <UniqueIdentifier>{83f8d6c4-0ef6-46f9-8ee5-c1031dfc789c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HttpServer">
+      <UniqueIdentifier>{df04c973-696a-4a1b-9a7c-4cfab7421b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{b244fd47-b664-47a7-b94b-5df9306d15ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

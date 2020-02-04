@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="ProxyClientLogicModule.cpp" />
+    <ClCompile Include="ProxyServer.cpp" />
+    <ClCompile Include="ProxyServerLogicModule.cpp" />
+    <ClCompile Include="ProxyServerPlugin.cpp" />
+    <ClCompile Include="ProxyServerState.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\IniFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\FuncUtil.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\d3des.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\md5.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProxyClientLogicModule.h" />
+    <ClInclude Include="ProxyServerState.h" />
+    <ClInclude Include="ProxyServerLogicModule.h" />
+    <ClInclude Include="ProxyServerPlugin.h" />
+    <ClInclude Include="ProxyServer.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\IniFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\LuaExt.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\FuncUtil.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\d3des.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\md5.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{a6d352a9-bdf8-4ab4-af8d-8ff3b06ff652}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

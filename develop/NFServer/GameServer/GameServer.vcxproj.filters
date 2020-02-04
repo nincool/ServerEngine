@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="GameServer.cpp" />
+    <ClCompile Include="GameServerState.cpp" />
+    <ClCompile Include="GameKernel.cpp" />
+    <ClCompile Include="CreateRoleModule.cpp" />
+    <ClCompile Include="GameServerPlugin.cpp" />
+    <ClCompile Include="MaintainModule.cpp" />
+    <ClCompile Include="PubDataModule.cpp" />
+    <ClCompile Include="UpdatePubData.cpp" />
+    <ClCompile Include="UpdateViewportModule.cpp" />
+    <ClCompile Include="UpdateVisInfoModule.cpp" />
+    <ClCompile Include="PlayerRenameModule.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\IniFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\StringUtil.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameServer.h" />
+    <ClInclude Include="GameServerState.h" />
+    <ClInclude Include="GameKernel.h" />
+    <ClInclude Include="CreateRoleModule.h" />
+    <ClInclude Include="GameServerPlugin.h" />
+    <ClInclude Include="MaintainModule.h" />
+    <ClInclude Include="MaintainMsgDataDefine.h" />
+    <ClInclude Include="PubDataModule.h" />
+    <ClInclude Include="UpdatePubData.h" />
+    <ClInclude Include="UpdateViewportModule.h" />
+    <ClInclude Include="UpdateVisInfoModule.h" />
+    <ClInclude Include="PlayerRenameModule.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\IniFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\LuaExt.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\StringUtil.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{9e199524-b9a7-45f4-b4be-717659bfa3b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

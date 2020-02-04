@@ -1,0 +1,10 @@
+^D:\SYZX\SERVERENGINE\DEVELOP\DEPENDENCIES\HIREDIS\VCXPROJ\CMAKEFILES\9AE216A7ABB8469960684AF2DCA7D210\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/SYZX/ServerEngine/develop/Dependencies/hiredis -BD:/SYZX/ServerEngine/develop/Dependencies/hiredis/vcxproj --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/SYZX/ServerEngine/develop/Dependencies/hiredis/vcxproj/hiredis.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

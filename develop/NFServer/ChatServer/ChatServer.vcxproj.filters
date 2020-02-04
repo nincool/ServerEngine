@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="ChatServerPlugin.cpp" />
+    <ClCompile Include="PlayerData.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="ChatModule.cpp" />
+    <ClCompile Include="ChatNetMsgModule.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\IniFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatServerInit.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\CryptoServer\CryptoServer.cpp">
+      <Filter>Utils\CryptoServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\Base64.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\rijndael.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NFComm\NFUtils\StringUtil.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChatServerPlugin.h" />
+    <ClInclude Include="PlayerData.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="ChatModule.h" />
+    <ClInclude Include="ChatNetMsgModule.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\IniFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\LuaExt.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatServerInit.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\CryptoServer\CryptoServer.h">
+      <Filter>Utils\CryptoServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\AutoMem.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\Base64.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\rijndael.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\StringUtil.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{9ea2182e-e050-43ad-b49e-c02ac23e80ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\CryptoServer">
+      <UniqueIdentifier>{fcb06a50-e487-40a2-9635-c47a1da2ad32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="RoomKernel.cpp" />
+    <ClCompile Include="RoomServer.cpp" />
+    <ClCompile Include="RoomServerPlugin.cpp" />
+    <ClCompile Include="RoomServerState.cpp" />
+    <ClCompile Include="..\..\NFComm\NFUtils\IniFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RoomKernel.h" />
+    <ClInclude Include="RoomServer.h" />
+    <ClInclude Include="RoomServerPlugin.h" />
+    <ClInclude Include="RoomServerState.h" />
+    <ClInclude Include="..\..\NFComm\NFUtils\IniFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NFComm\NFUtils\LuaExt.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{c45fb000-ff48-4326-88ef-bb50dfc79773}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

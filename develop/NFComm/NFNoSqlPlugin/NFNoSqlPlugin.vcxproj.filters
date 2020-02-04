@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="NFNoSqlModule.cpp" />
+    <ClCompile Include="NFNoSqlPlugin.cpp" />
+    <ClCompile Include="RedisDriver.cpp" />
+    <ClCompile Include="RedisDriverHash.cpp" />
+    <ClCompile Include="RedisDriverKey.cpp" />
+    <ClCompile Include="RedisDriverSet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NFNoSqlModule.h" />
+    <ClInclude Include="NFNoSqlPlugin.h" />
+    <ClInclude Include="RedisCommand.h" />
+    <ClInclude Include="RedisDriver.h" />
+  </ItemGroup>
+</Project>
